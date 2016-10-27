@@ -1,12 +1,12 @@
  
 <ul class="nav navbar-nav navbar-right">
-<?php 
-    foreach($menu_title as $title){
+<?php
+foreach ($menu_title as $title):
 ?>
 <li>
     <a href="index.html"><?php echo $title->menu ?></a>
 </li>
-<?php } ?>
+<?php endforeach; ?>
 <li role="presentation" class="dropdown">
     <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
     Projects <span class="caret"></span>

@@ -13,8 +13,11 @@ class Menu_model extends CI_Model{
     }
     
     public function get_menu_titles(){
-        $query = $this->db->query('SELECT * FROM menu');
+        $this->load->database();
+        //$query = $this->db->query('SELECT * FROM menu');
         
+        //$this->db->where('id',1);
+        $query = $this->db->get('menu');
         if($query ->num_rows()>0){
             return $query->result();
         }else{
