@@ -3,7 +3,11 @@ class menu_manager extends MY_Controller {
     
     public function get_menu(){
         
-        $this->load->view('admin/menu_manager_view.php');
+        $this->load->model('admin/menu_model');
+        $menuList = array(
+            'menu' => $this->menu_model->get_menu_titles()
+            );
+        $this->load->view('admin/menu_manager_view.php',$menuList);
     }
     public function add_menu(){
         $this->load->helper('form');

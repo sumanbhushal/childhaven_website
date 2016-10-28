@@ -10,18 +10,22 @@
 <table class="table table-striped">
     <tr>
       <td> Menu Title</td>
-      <td> Menu Perma</td>
-      <td>Controls</td>
+      <td> Postion</td>
+      <td> Parent Menu</td>
+      <td> Controls</td>
     </tr>
+    <?php foreach($menu as $menus) { ?>
     <tr>
-      <td class="active">...</td>
-      <td class="success">...</td>
+      <td><?php echo $menus ->menu; ?></td>
+      <td><?php echo $menus -> position; ?></td>
+      <td><?php echo $menus -> parent_menu; ?></td>
       <td >
         <button type="button" class="btn btn-info">Edit</button>
         <button type="button" class="btn btn-primary">Delete</button>
 
       </td>
     </tr>
+    <?php }?>
 </table>
 </div>
 </div>

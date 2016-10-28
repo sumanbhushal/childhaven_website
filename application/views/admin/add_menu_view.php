@@ -26,6 +26,20 @@
     </div>
 </div>
 <div class="row">
+    <div class="col-lg-10">
+    <div class="form-group">
+      <label for="menuParma">Menu Details</label>
+      <textarea name="post_details" id="post_details" rows="10" cols="80">
+            </textarea>
+    <script>
+                CKEDITOR.replace( 'post_details' );
+    </script>
+    </div>
+    <div class="col-lg-2">
+    <?php echo form_error('menu_parma') ?>
+    </div>
+</div>
+<div class="row">
     <div class="col-lg-8">
     <div class="form-group">
       <label for="parentMenu">Parent Menu</label>

@@ -12,6 +12,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
     <?php echo link_tag("application/include/css/jssor-slider.css") ?>
     <script src="<?php echo base_url('application/include/js/jquery-1.11.3.min.js') ?>"></script>
     <script src="<?php echo base_url('application/include/js/jssor.slider-21.1.5.mini.js') ?>"></script>
+    <script src="<?php echo base_url('application/libraries/ckeditor/ckeditor.js') ?>"></script>
 </head>
 <body>
 <section id="body" class="container">
