@@ -3,6 +3,7 @@
 <form class="form-horizontal" action="">
 -->
 <?php echo form_open('admin/admin_login', ['class' => 'form-horizontal']) ?>
+<?php echo form_hidden('user_id', $this->session->userdata('user_id') ) ?>
   <fieldset>
     <legend>Admin Login </legend>
     <?php if($error=$this->session->flashdata('login_invalid')): ?>
