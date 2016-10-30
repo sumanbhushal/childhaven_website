@@ -18,7 +18,6 @@ class Admin extends CI_Controller
     public function admin_login()
     {
         $this->load->library('form_validation');
-        
         $this->form_validation->set_error_delimiters('<p class="text-primary">', '</p>');
         if ($this->form_validation->run('admin_login_form_rules')) {
             $user_name = $this->input->post('username');

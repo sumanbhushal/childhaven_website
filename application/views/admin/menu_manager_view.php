@@ -4,7 +4,7 @@
 
 <h1>Menu Management </h1>
 <div>
-    <?php echo anchor('menu_manager/add_menu', 'Add New Menu', 'class="btn btn-info active"') ?>
+    <?php echo anchor('menu_manager/add_new_menu', 'Add New Menu', 'class="btn btn-info active"') ?>
 </div>
     <br />
 <table class="table table-striped">

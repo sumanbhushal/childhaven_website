@@ -18,11 +18,6 @@ $config = [
             'field' => 'menu_title',
             'label' => 'Menu Title',
             'rules' => 'required'
-        ],
-        [
-            'field' => 'menu_parma',
-            'label' => 'Menu Parma',
-            'rules' => 'required'
         ]
     ]
 
